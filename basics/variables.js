@@ -9,6 +9,10 @@ accountPassword  = 'ankit293932'
 accountCity = 'Delhi'
 
 
+/*
+prefer not to use var keyword
+*/
+
 
 
 // accountId = 2455662 // Not allowed to change constant value. 
