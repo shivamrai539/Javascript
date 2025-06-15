@@ -13,9 +13,9 @@ let userEmail;
 const id = Symbol('123')
 const anotherId = Symbol.for('123')    // if we use symbol.for the it creat same symbol all time.
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
-console.log(typeof anotherId);
+// console.log(typeof anotherId);
 
 
 
@@ -35,3 +35,32 @@ let myobj = {
 const myfunction = function(){
     console.log("hello WOrld");
 }
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++(boundary).
+
+// stack memory(primitive), heap memory(Non-primitive)
+
+
+// stack example. 
+let mycollegename = "GlauniversityMathura"
+
+let anothername = mycollegename
+anothername = "IIT Bihar"
+
+console.log(mycollegename);
+console.log(anothername);
+
+
+
+// heap example.
+let userOne = {
+    email : "user@google.com",
+    upi : "user@ybl"
+}
+
+let usertwo = userOne
+
+usertwo.email = "newuser@google.com"
+
+console.log(userOne.email);
