@@ -6,8 +6,8 @@
 console.log("Hello World");
 
 
-let name = "shivam"
-let age = 18
+let name = "shivam"      // string datatype 
+let age = 18             
 let isLoggedIn = false
 let state;
 
@@ -17,12 +17,12 @@ let state;
 // boolean => true/false
 // null => standalone value
 // undefined => 
-// symbol => unique
+// symbol => for unique
 
 
 // object
 
-console.log(typeof isLoggedIn);
+console.log(typeof isLoggedIn);       // typeof return the type of give datatype. 
 console.log(typeof age);
-console.log(typeof undefined); // undefined
-console.log(typeof null); // object
+console.log(typeof undefined); // print undefined
+console.log(typeof null); // print object of type null. 
