@@ -9,7 +9,7 @@ let string = "shivam"
 
 let cvtonumber = Number(string);
 
-console.log(typeof cvtonumber); // in js even string converted to number but it type is not a number.
+console.log(typeof cvtonumber); // in js even string converted to number but it type is not a number NaN.
 console.log(cvtonumber); // NaN
 
 
