@@ -14,7 +14,11 @@ const JsUser = {
     location: "Jaipur",
     email: "hitesh@google.com",
     isLoggedIn: false,
-    lastLoginDays: ["Monday", "Saturday"]
+    lastLoginDays: ["Monday", "Saturday"],
+
+    greet : function(){
+        console.log("This is how you define a function in an object");
+    }
 }
 
 // console.log(JsUser.email)
@@ -38,5 +42,8 @@ JsUser.greeting = function() {
 JsUser.greetingtwo =  function(){
     console.log(`Hello Js User, ${this["full name"]}`);
 }
+
+
 console.log(JsUser.greeting());
 console.log(JsUser.greetingtwo());
+console.log(JsUser.greet());
