@@ -18,4 +18,36 @@ function loginUserMessage(Username = "Anonymous"){  // here parameter is already
 }
 
 let name = loginUserMessage()       // if no argument pass then it return undefined.
-console.log(name);
+// console.log(name);
+
+// +++++++++++ in shopping we don't know how many item buyer going to add in cart so we use rest operato to merger all amount in array and the calculate it.
+
+function countCartAmmount(...num){         // here ...num work as rest operator. 
+    return num
+}
+
+// console.log(countCartAmmount(100 , 200, 300, 500, 600));
+
+const user = {
+    username: "shviam",
+    prices: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+// handleObject(user)
+handleObject({
+    username: "sam",
+    price: 399
+})
+
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+console.log(returnSecondValue([200, 400, 500, 1000]));
