@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Only Coding</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+</body>
+<script src="javascript.js">
+
+    let intervalidID;
+
+    const printing = function(str){
+        console.log(str);
+    }
+    document.querySelector('#start').addEventListener('click',function(){
+        intervalidID =  setInterval(function(str){
+            console.log(`${str} + shivam rai ` + Date.now())
+        },1000,"hii");
+        console.log("started");
+        // intervalidID = setInterval(printing,1000,"hello")
+    })
+    document.querySelector('#stop').addEventListener('click',function(){
+        if(intervalidID){
+            clearInterval(intervalidID);
+            intervalidID = null;
+            console.log("stopped")
+
+        }
+    })
+</script>
+
+</html>

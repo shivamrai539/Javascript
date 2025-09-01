@@ -1,0 +1,56 @@
+body {
+    width: 300px;
+    max-width: 750px;
+    min-width: 480px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #212121;
+}
+
+.headingname {
+    color: white;
+    background-color: black;
+    padding: 7px;
+
+}
+
+#para1 {
+    color: white;
+}
+
+form {
+    color: white;
+}
+
+#guess{
+    font-size: 55px;
+    margin-top: 120px;
+}
+
+.finalbox {
+    color: white;
+}
+
+#wrapper {
+    background-color: grey;
+}
+
+#secheading {
+    size: 100px;
+}
+
+#guessField {
+    border-radius: 5px;
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+#sbmt {
+    text-align: center;
+    height: 25px;
+    width: 130px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}

@@ -1,0 +1,36 @@
+html {
+    background-color: grey;
+}
+
+.container {
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+    background-color: lightgreen;
+    border-radius: 20px;
+}
+
+
+#height {
+    border-radius: 5px;
+}
+#weight {
+    border-radius: 5px;
+}
+#calbutton {
+    border-radius: 5px;
+}
+#results {
+    margin-left: 40px;
+}
+
+#res {
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#weight-guide {
+    background-color: white;
+    border-radius: 20px;
+    margin: 10px;
+}

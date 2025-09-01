@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <div>
+        <ul id="Allimage">
+            <li><img height="300px" id="swami" src="Arise,Awake.png" alt="Arise"></li>
+            <li><img width="300px" id="statue" src="buddha-statue-nature.jpg" alt="Arise"></li>
+            <li><img width="300px" id="whitebuddha" src="buddha-statue-with-natural-water-landscape.jpg" alt="Arise"></li>
+            <li><img width="300px" id="cosmose" src="GBimage1.jpg" alt="Arise"></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google" target="_blank">Google</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    document.getElementById('cosmose').addEventListener('click',function(e){
+        alert("you clicked on last image");
+        console.log(e.target.tagName)
+    })
+
+    document.querySelector('#google').addEventListener('click',(e) => {
+        console.log('google clicked')
+        e.stopPropagation()
+    })
+
+    document.getElementById('Allimage').addEventListener('click',function(e){
+        console.log(e.target.tagName)
+        if(e.target.tagName === 'IMG'){
+            console.log(e.target.id);
+            let removeItem = e.target.parentNode
+            removeItem.remove()
+        }
+    })
+
+
+
+
+
+    // Explore... 
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+</script>
+</html>
